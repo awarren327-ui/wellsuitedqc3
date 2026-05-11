@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Well Suited QC — Empowering Underserved Youth Through Mentorship in the Quad Cities</title>
+<meta name="description" content="Well Suited connects underserved youth with mentors and community leaders across the Quad Cities. Founded by Tracy Singleton in Davenport, Iowa, we build confidence, exposure, and opportunity through real relationships.">
+<meta name="keywords" content="Well Suited, Quad Cities, mentorship, youth nonprofit, Davenport Iowa, Tracy Singleton, Lincoln Center, Embrace Race, underserved youth">
+<meta property="og:title" content="Well Suited QC — Mentorship for Underserved Youth in the Quad Cities">
+<meta property="og:description" content="Empowering underserved youth through mentorship, exposure, and opportunity in the Quad Cities since 2018.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/04-kent-tracy.png">
+<meta name="theme-color" content="#0B0A0F">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0B0A0F;
+  --deep:#111016;
+  --surface:#17161D;
+  --elevated:#1F1E26;
+  --border:rgba(255,255,255,0.08);
+  --border-hover:rgba(255,255,255,0.16);
+  --text-primary:#F5F3EF;
+  --text-secondary:#B5B0A6;
+  --text-muted:#7C786F;
+  --gold:#D4B25C;
+  --gold-soft:#C9A84C;
+  --gold-dim:rgba(212,178,92,0.12);
+  --gold-glow:rgba(212,178,92,0.28);
+  --ember:#C44B3F;
+  --ember-dim:rgba(196,75,63,0.14);
+  --ivory:#EDE8DF;
+  --sage:#5A7A62;
+  --focus:#FFC857;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Outfit',system-ui,sans-serif;
+  --ease-out:cubic-bezier(0.16,1,0.3,1);
+  --ease-spring:cubic-bezier(0.34,1.56,0.64,1);
+  --max-width:1200px;
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{font-family:var(--font-body);background:var(--ink);color:var(--text-primary);overflow-x:hidden;line-height:1.6;font-size:16px}
+a{text-decoration:none;color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:2px}
+img{max-width:100%;height:auto;display:block}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
+.skip-link{position:absolute;top:-100px;left:1rem;background:var(--gold);color:var(--ink);padding:.75rem 1.25rem;font-weight:700;font-size:.85rem;z-index:9999;transition:top .2s}
+.skip-link:focus{top:1rem}
+
+/* SUPPORT BAR */
+.support-bar{position:fixed;top:0;left:0;right:0;background:var(--gold);color:var(--ink);padding:.55rem 3rem;z-index:101;display:flex;align-items:center;justify-content:center;gap:1.5rem;font-size:.78rem;font-weight:600;letter-spacing:.02em}
+.support-bar strong{font-weight:700}
+.support-bar a{display:inline-flex;align-items:center;gap:.4rem;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.support-bar a:hover{text-decoration-thickness:2px}
+
+/* NAV */
+.nav{position:fixed;top:36px;width:100%;z-index:100;padding:1rem 3rem;display:flex;align-items:center;justify-content:space-between;transition:all .5s var(--ease-out);background:linear-gradient(to bottom,rgba(11,10,15,.6),rgba(11,10,15,.2));backdrop-filter:blur(8px)}
+.nav.pinned{background:rgba(11,10,15,.95);backdrop-filter:blur(24px) saturate(1.4);border-bottom:1px solid var(--border);padding:.85rem 3rem}
+.nav-brand{display:flex;align-items:baseline;gap:.4rem;font-family:var(--font-display);font-size:1.4rem;letter-spacing:.02em}
+.nav-brand strong{color:var(--gold);font-weight:700}
+.nav-brand span{color:var(--text-secondary);font-weight:400;font-style:italic}
+.nav-menu{display:flex;align-items:center;gap:2.3rem;list-style:none}
+.nav-menu a{font-size:.78rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary);transition:color .3s;padding:.4rem 0;position:relative}
+.nav-menu a:hover{color:var(--text-primary)}
+.nav-menu a:not(.nav-cta-btn)::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width .3s var(--ease-out)}
+.nav-menu a:not(.nav-cta-btn):hover::after{width:100%}
+.nav-cta-btn{background:var(--gold) !important;color:var(--ink) !important;padding:.6rem 1.4rem;border-radius:2px;font-weight:700 !important;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;transition:transform .25s var(--ease-spring),box-shadow .3s}
+.nav-cta-btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 8px 24px var(--gold-glow);color:var(--ink) !important}
+.nav-cta-btn::after{display:none !important}
+.hamburger{display:none;background:none;border:none;color:var(--text-primary);font-size:1.4rem;cursor:pointer;padding:.5rem}
+
+/* HERO — full-bleed photographic */
+.hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;overflow:hidden;padding-top:36px}
+.hero-photo{position:absolute;inset:0;z-index:0}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,10,15,.45) 0%,rgba(11,10,15,.55) 40%,rgba(11,10,15,.92) 90%,var(--ink) 100%)}
+.hero-overlay::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(212,178,92,.08),transparent 60%)}
+.hero-grain{position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none;z-index:2}
+.hero-content{position:relative;z-index:3;max-width:1360px;margin:0 auto;padding:0 4rem 6rem;width:100%;display:grid;grid-template-columns:1.3fr .7fr;gap:4rem;align-items:end}
+.hero-text{padding-bottom:1rem}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;margin-bottom:2rem;opacity:0;animation:slideUp .8s .2s var(--ease-out) forwards}
+.hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse-dot 2.5s infinite;flex-shrink:0}
+.hero-eyebrow span{font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+@keyframes pulse-dot{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:1;transform:scale(1.3)}}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.8rem,5.8vw,5.5rem);font-weight:700;line-height:1.02;margin-bottom:1.6rem;opacity:0;animation:slideUp .9s .35s var(--ease-out) forwards;letter-spacing:-.015em;text-shadow:0 2px 30px rgba(0,0,0,.3)}
+.hero h1 .accent{color:var(--gold);font-style:italic}
+.hero h1 .line{display:block}
+.hero-desc{font-size:1.1rem;color:var(--ivory);line-height:1.7;max-width:520px;margin-bottom:2.5rem;font-weight:300;opacity:0;animation:slideUp .9s .5s var(--ease-out) forwards;text-shadow:0 1px 20px rgba(0,0,0,.4)}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:slideUp .9s .65s var(--ease-out) forwards}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:1.05rem 2.2rem;font-family:var(--font-body);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:none;cursor:pointer;transition:all .3s var(--ease-out);border-radius:2px;text-decoration:none}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 32px var(--gold-glow)}
+.btn-ghost{background:transparent;color:var(--text-primary);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(8px)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);background:rgba(11,10,15,.4)}
+.btn-arrow::after{content:'\2192';transition:transform .3s}
+.btn-arrow:hover::after{transform:translateX(4px)}
+
+/* HERO QUOTE PILL — small, in lower right */
+.hero-pill{padding-bottom:1.5rem;opacity:0;animation:slideUp 1s .8s var(--ease-out) forwards}
+.hero-pill-inner{background:rgba(23,22,29,.75);backdrop-filter:blur(20px) saturate(1.4);border:1px solid rgba(212,178,92,.25);padding:1.5rem 1.75rem;border-radius:2px;position:relative}
+.hero-pill-inner::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold)}
+.hero-pill-mark{font-family:var(--font-display);font-size:2.5rem;color:var(--gold);line-height:.5;font-weight:700;margin-bottom:.5rem}
+.hero-pill p{font-family:var(--font-display);font-style:italic;font-size:1.05rem;color:var(--ivory);line-height:1.5;margin-bottom:1rem}
+.hero-pill cite{display:flex;align-items:center;gap:.7rem;font-style:normal}
+.hero-pill .pill-avatar{width:34px;height:34px;border-radius:50%;background:var(--gold-dim);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:.85rem;border:1px solid rgba(212,178,92,.4)}
+.hero-pill .pill-name{font-size:.78rem;font-weight:600;color:var(--text-primary)}
+.hero-pill .pill-role{font-size:.65rem;color:var(--text-muted);letter-spacing:.05em;margin-top:.1rem}
+
+@keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+
+/* REVEAL */
+.r{opacity:0;transform:translateY(50px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out)}.r.v{opacity:1;transform:none}
+.r-delay-1{transition-delay:.1s}.r-delay-2{transition-delay:.2s}.r-delay-3{transition-delay:.3s}
+
+/* SECTIONS */
+.section{padding:7rem 3rem}
+.section-dark{background:var(--deep)}
+.container{max-width:var(--max-width);margin:0 auto}
+.eyebrow{font-size:.65rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:.8rem}
+.eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+.section-heading{font-family:var(--font-display);font-size:clamp(2rem,3.8vw,3.2rem);font-weight:700;line-height:1.12;margin-bottom:1rem;letter-spacing:-.01em}
+.section-sub{font-size:1.05rem;color:var(--text-secondary);max-width:580px;line-height:1.75;font-weight:300}
+
+/* MISSION */
+.narrative-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-top:3.5rem}
+.narrative-block p{font-size:1.05rem;color:var(--text-secondary);line-height:1.85;margin-bottom:1.4rem;font-weight:300}
+.narrative-block p:first-of-type::first-letter{font-family:var(--font-display);font-size:3.4rem;float:left;line-height:.8;margin-right:.5rem;color:var(--gold);font-weight:700;padding-top:.3rem}
+.mission-photo-wrapper{position:relative;margin-bottom:2rem}
+.mission-photo{aspect-ratio:4/5;overflow:hidden;border-radius:2px;border:1px solid var(--border)}
+.mission-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease-out)}
+.mission-photo:hover img{transform:scale(1.04)}
+.mission-photo-caption{position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;background:rgba(11,10,15,.85);backdrop-filter:blur(10px);padding:1rem 1.25rem;border-left:3px solid var(--gold);border-radius:1px}
+.mission-photo-caption .pc-meta{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.25rem}
+.mission-photo-caption .pc-text{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--ivory);line-height:1.3}
+.timeline-visual{margin-top:0}
+.timeline-item{display:grid;grid-template-columns:80px 1fr;gap:1.2rem;padding:1.5rem 0;border-bottom:1px solid var(--border)}
+.timeline-item:last-child{border-bottom:none}
+.timeline-year{font-family:var(--font-display);font-size:1.7rem;font-weight:700;color:var(--gold)}
+.timeline-desc h4{font-size:.95rem;font-weight:600;margin-bottom:.3rem;color:var(--text-primary)}
+.timeline-desc p{font-size:.85rem;color:var(--text-muted);line-height:1.6}
+
+/* PARALLAX BAND — full-width photo break */
+.photo-band{position:relative;height:60vh;min-height:450px;overflow:hidden}
+.photo-band img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.photo-band-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,10,15,.85) 0%,rgba(11,10,15,.4) 50%,rgba(11,10,15,.7) 100%)}
+.photo-band-content{position:absolute;inset:0;display:flex;align-items:center;padding:3rem 4rem;z-index:2}
+.photo-band-inner{max-width:600px}
+.photo-band-eyebrow{font-size:.65rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.photo-band-quote{font-family:var(--font-display);font-style:italic;font-size:clamp(1.5rem,3vw,2.4rem);font-weight:600;color:var(--ivory);line-height:1.3;margin-bottom:1.5rem;letter-spacing:-.005em}
+.photo-band-attr{font-size:.8rem;color:var(--text-secondary);letter-spacing:.05em}
+.photo-band-attr strong{color:var(--gold);font-weight:600}
+
+/* WHY IT MATTERS */
+.why-matters{position:relative;overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.why-bg{position:absolute;inset:0;background:linear-gradient(135deg,var(--surface) 0%,var(--ink) 50%,var(--surface) 100%)}
+.why-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,var(--gold-dim),transparent 60%),radial-gradient(circle at 70% 70%,var(--ember-dim),transparent 60%)}
+.why-inner{position:relative;z-index:2;max-width:1100px;margin:0 auto}
+.why-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:5rem;align-items:center;margin-top:3rem}
+.why-stat-block{position:relative}
+.why-big-num{font-family:var(--font-display);font-size:clamp(5rem,9vw,8rem);font-weight:700;color:var(--gold);line-height:.95;letter-spacing:-.02em;margin-bottom:.5rem}
+.why-big-num small{font-size:.32em;color:var(--ivory);font-style:italic;font-weight:400;display:block;margin-top:.7rem;letter-spacing:.01em;line-height:1.3}
+.why-stat-source{font-size:.7rem;color:var(--text-muted);margin-top:1rem;letter-spacing:.05em}
+.why-stat-source a{color:var(--text-secondary);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--gold-dim)}
+.why-stat-source a:hover{color:var(--gold);text-decoration-color:var(--gold)}
+.why-text h3{font-family:var(--font-display);font-size:1.9rem;font-weight:700;line-height:1.2;margin-bottom:1rem;color:var(--ivory)}
+.why-text p{font-size:1.02rem;color:var(--text-secondary);line-height:1.8;font-weight:300;margin-bottom:1rem}
+
+/* PROGRAMS */
+.programs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.program-card{background:var(--deep);border:1px solid var(--border);position:relative;overflow:hidden;transition:border-color .4s,transform .4s var(--ease-out);border-radius:2px;display:flex;flex-direction:column}
+.program-card:hover,.program-card:focus-within{border-color:rgba(212,178,92,.35);transform:translateY(-6px)}
+.program-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--ember));transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease-out);z-index:3}
+.program-card:hover::after,.program-card:focus-within::after{transform:scaleX(1)}
+.program-card-photo{aspect-ratio:5/3;overflow:hidden;position:relative}
+.program-card-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease-out)}
+.program-card:hover .program-card-photo img{transform:scale(1.06)}
+.program-card-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,10,15,.6),transparent 60%)}
+.program-card-body{padding:2rem;flex-grow:1;display:flex;flex-direction:column}
+.program-icon-wrap{width:42px;height:42px;border:1px solid var(--gold-dim);border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(212,178,92,.06);margin-bottom:1.2rem}
+.program-icon-wrap svg{width:18px;height:18px;color:var(--gold)}
+.program-card h3{font-family:var(--font-display);font-size:1.55rem;font-weight:700;margin-bottom:.7rem;color:var(--text-primary);line-height:1.2}
+.program-card p{font-size:.92rem;color:var(--text-secondary);line-height:1.7;font-weight:300;flex-grow:1}
+.program-tag{display:inline-block;margin-top:1.2rem;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);padding:.35rem .8rem;border:1px solid var(--gold-dim);border-radius:2px;align-self:flex-start}
+
+/* STORY / TESTIMONIAL — beneficiary moment */
+.story-section{padding:8rem 3rem;background:var(--ink);position:relative;overflow:hidden}
+.story-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:5rem;align-items:center;max-width:1200px;margin:0 auto;position:relative;z-index:2}
+.story-photo{position:relative}
+.story-photo-img{aspect-ratio:4/5;overflow:hidden;border-radius:2px;border:1px solid var(--border)}
+.story-photo-img img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.story-photo-frame{position:absolute;inset:-10px;border:1px solid var(--gold-dim);border-radius:2px;z-index:-1;transform:translate(15px,15px)}
+.story-content .eyebrow{margin-bottom:1.5rem}
+.story-quote{font-family:var(--font-display);font-style:italic;font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:600;line-height:1.35;color:var(--ivory);margin-bottom:2rem;letter-spacing:-.005em}
+.story-quote-mark{display:block;font-size:4rem;color:var(--gold);line-height:.5;margin-bottom:.5rem;font-weight:700}
+.story-attr{display:flex;align-items:center;gap:1rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+.story-attr-info .name{font-size:1rem;font-weight:600;color:var(--text-primary)}
+.story-attr-info .role{font-size:.78rem;color:var(--text-muted);margin-top:.2rem;letter-spacing:.04em}
+.story-attr-line{width:40px;height:1px;background:var(--gold)}
+
+/* PRESS — with publication branding */
+.news-feed{display:grid;grid-template-columns:1.2fr 1fr;gap:1.5rem;margin-top:3rem}
+.news-feature{grid-row:span 2;background:var(--surface);border:1px solid var(--border);overflow:hidden;transition:border-color .3s,transform .3s;border-radius:2px;display:flex;flex-direction:column}
+.news-feature:hover,.news-feature:focus-within{border-color:rgba(212,178,92,.3);transform:translateY(-3px)}
+.news-feature-photo{aspect-ratio:16/9;overflow:hidden;position:relative}
+.news-feature-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease-out)}
+.news-feature:hover .news-feature-photo img{transform:scale(1.05)}
+.news-feature-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,10,15,.85),transparent 50%)}
+.news-feature-pub{position:absolute;bottom:1rem;left:1.5rem;z-index:2;display:flex;align-items:center;gap:.6rem;background:rgba(11,10,15,.8);backdrop-filter:blur(8px);padding:.45rem .9rem;border-radius:2px;border:1px solid rgba(255,255,255,.1)}
+.pub-mark{font-family:var(--font-display);font-weight:700;font-size:.8rem;letter-spacing:.05em}
+.pub-mark.qct{color:#D4B25C}
+.pub-mark.kwqc{color:#fff;font-family:var(--font-body);font-weight:800;letter-spacing:.1em}
+.pub-mark.wvik{color:#9BBFC9;font-family:var(--font-body);font-weight:700;letter-spacing:.1em}
+.pub-mark.qcbj{color:#fff;font-family:var(--font-display);font-weight:700;font-style:italic}
+.pub-mark.qci{color:#fff;font-family:var(--font-body);font-weight:600;font-size:.7rem;letter-spacing:.05em}
+.pub-mark.our-qc{color:#C44B3F;font-family:var(--font-body);font-weight:700;letter-spacing:.05em}
+.pub-tag{font-size:.55rem;color:var(--text-muted);letter-spacing:.18em;text-transform:uppercase;border-left:1px solid var(--border-hover);padding-left:.6rem}
+.featured-pin{position:absolute;top:1rem;right:1.5rem;z-index:2;background:var(--ember);color:white;padding:.3rem .7rem;font-size:.6rem;font-weight:700;letter-spacing:.2em;border-radius:1px}
+.news-feature-body{padding:1.8rem 2rem 2rem;flex-grow:1;display:flex;flex-direction:column}
+.nf-date{font-size:.7rem;color:var(--text-muted);margin-bottom:.6rem;letter-spacing:.05em}
+.news-feature-body h3{font-family:var(--font-display);font-size:1.7rem;font-weight:700;line-height:1.2;margin-bottom:1rem;color:var(--text-primary)}
+.news-feature-body p{font-size:.92rem;color:var(--text-secondary);line-height:1.7;font-weight:300;margin-bottom:1rem;flex-grow:1}
+.read-link{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.4rem;transition:gap .3s;align-self:flex-start}
+.read-link:hover{gap:.8rem}
+.read-link::after{content:'\2192'}
+.news-compact{background:var(--surface);border:1px solid var(--border);transition:border-color .3s,transform .3s;border-radius:2px;display:flex;flex-direction:column;overflow:hidden}
+.news-compact:hover,.news-compact:focus-within{border-color:rgba(212,178,92,.3);transform:translateY(-3px)}
+.news-compact-pub{padding:1.25rem 1.5rem .5rem;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.nc-pub-name{font-family:var(--font-body);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
+.nc-pub-name.kwqc{color:#fff}
+.nc-pub-name.our-qc{color:#C44B3F}
+.nc-date{font-size:.68rem;color:var(--text-muted)}
+.news-compact-body{padding:.5rem 1.5rem 1.5rem;flex-grow:1;display:flex;flex-direction:column}
+.news-compact-body h4{font-family:var(--font-display);font-size:1.2rem;font-weight:700;line-height:1.3;margin-bottom:.6rem;color:var(--text-primary)}
+.news-compact-body p{font-size:.85rem;color:var(--text-secondary);line-height:1.6;font-weight:300;margin-bottom:1rem;flex-grow:1}
+.news-more{margin-top:2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.news-mini{display:flex;flex-direction:column;background:var(--elevated);border:1px solid var(--border);transition:border-color .3s,transform .3s;border-radius:2px;overflow:hidden}
+.news-mini:hover,.news-mini:focus-visible{border-color:rgba(212,178,92,.3);transform:translateY(-3px)}
+.nm-pub{padding:1rem 1.3rem .3rem;display:flex;align-items:center;justify-content:space-between}
+.nm-pub-name{font-family:var(--font-body);font-weight:700;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase}
+.nm-pub-name.wvik{color:#9BBFC9}
+.nm-pub-name.qcbj{color:var(--gold)}
+.nm-pub-name.qci{color:#fff}
+.news-mini h5{font-family:var(--font-display);font-size:1.05rem;font-weight:600;margin:.4rem 0;line-height:1.3;color:var(--text-primary);padding:0 1.3rem}
+.nm-date{font-size:.65rem;color:var(--text-muted);padding:0 1.3rem 1.1rem}
+
+/* GALLERY SLIDER */
+.gallery-section{padding:7rem 3rem;background:var(--deep)}
+.gallery-slider{position:relative;margin-top:3rem;border-radius:2px;overflow:hidden;background:var(--surface);border:1px solid var(--border)}
+.slider-track{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden}
+.slider-slide{position:absolute;inset:0;opacity:0;transition:opacity .8s var(--ease-out);pointer-events:none}
+.slider-slide.active{opacity:1;pointer-events:auto}
+.slider-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.slider-caption{position:absolute;bottom:0;left:0;right:0;padding:2rem 2.5rem;background:linear-gradient(to top,rgba(11,10,15,.95) 0%,rgba(11,10,15,.6) 60%,transparent 100%);color:var(--ivory)}
+.slider-caption-meta{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.slider-caption-title{font-family:var(--font-display);font-size:1.5rem;font-weight:700;line-height:1.25;letter-spacing:-.005em}
+.slider-controls{position:absolute;bottom:1.5rem;right:1.5rem;display:flex;gap:.5rem;z-index:5}
+.slider-btn{width:42px;height:42px;border:1px solid rgba(255,255,255,.2);background:rgba(11,10,15,.6);color:var(--text-primary);cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:all .3s;backdrop-filter:blur(4px)}
+.slider-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(11,10,15,.85)}
+.slider-dots{position:absolute;bottom:1.5rem;left:1.5rem;display:flex;gap:.4rem;z-index:5}
+.slider-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);border:none;cursor:pointer;transition:all .3s;padding:0}
+.slider-dot.active{background:var(--gold);width:24px;border-radius:4px}
+.slider-counter{position:absolute;top:1.5rem;right:1.5rem;background:rgba(11,10,15,.6);backdrop-filter:blur(4px);color:var(--text-primary);padding:.4rem .9rem;font-size:.7rem;letter-spacing:.12em;border:1px solid rgba(255,255,255,.1);border-radius:2px;z-index:5}
+.slider-counter strong{color:var(--gold);font-weight:700}
+
+/* PARTNERS */
+.partners-track{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-top:3rem}
+.partner-badge{padding:1rem 2rem;border:1px solid var(--border);font-size:.78rem;font-weight:500;color:var(--text-muted);letter-spacing:.06em;transition:all .3s;border-radius:2px}
+.partner-badge:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-dim)}
+
+/* CTA / GET INVOLVED */
+.cta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.cta-card{background:var(--deep);border:1px solid var(--border);padding:2.5rem 2rem;text-align:center;transition:border-color .4s,transform .4s var(--ease-out);border-radius:2px;display:flex;flex-direction:column}
+.cta-card:hover,.cta-card:focus-within{border-color:rgba(212,178,92,.35);transform:translateY(-6px)}
+.cta-icon-wrap{width:64px;height:64px;border-radius:50%;margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;border:1px solid currentColor;background:rgba(255,255,255,.02)}
+.cta-icon-wrap svg{width:24px;height:24px}
+.cta-icon-wrap.mentor{color:var(--gold);background:var(--gold-dim)}
+.cta-icon-wrap.sponsor{color:var(--ember);background:var(--ember-dim)}
+.cta-icon-wrap.share{color:var(--sage);background:rgba(90,122,98,.18)}
+.cta-card h3{font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:.7rem;color:var(--text-primary)}
+.cta-card p{font-size:.9rem;color:var(--text-secondary);line-height:1.65;font-weight:300;margin-bottom:1.5rem;flex-grow:1}
+.cta-link{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.4rem;transition:gap .3s;justify-content:center}
+.cta-link:hover{gap:.8rem}
+.cta-link::after{content:'\2192'}
+
+/* DONATE */
+.donate-banner{position:relative;overflow:hidden;padding:5rem 3rem}
+.donate-bg{position:absolute;inset:0;background:linear-gradient(135deg,#1a1820 0%,var(--ink) 50%,#1a1820 100%)}
+.donate-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,var(--gold-dim),transparent 70%)}
+.donate-grain{position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none}
+.donate-inner{position:relative;z-index:2;max-width:900px;margin:0 auto;text-align:center}
+.donate-inner h2{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.1;margin-bottom:1.2rem;letter-spacing:-.01em}
+.donate-inner h2 .em{color:var(--gold);font-style:italic}
+.donate-inner>p{color:var(--text-secondary);font-size:1.1rem;line-height:1.7;font-weight:300;margin-bottom:2.5rem;max-width:600px;margin-left:auto;margin-right:auto}
+.donate-actions{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.btn-coming-soon{position:relative;opacity:.85;cursor:not-allowed;display:inline-flex;align-items:center;gap:.7rem}
+.btn-coming-soon:hover{transform:none;box-shadow:none}
+.coming-soon-tag{font-size:.6rem;letter-spacing:.18em;background:rgba(11,10,15,.25);color:var(--ink);padding:.25rem .55rem;border-radius:1px;font-weight:700}
+
+/* CONTACT MODAL */
+.contact-modal{position:fixed;inset:0;background:rgba(11,10,15,.92);z-index:200;display:none;align-items:center;justify-content:center;padding:2rem;backdrop-filter:blur(12px)}
+.contact-modal.active{display:flex;animation:fadeIn .3s}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.contact-modal-content{background:var(--surface);border:1px solid var(--border);border-radius:2px;max-width:520px;width:100%;padding:2.8rem 2.5rem;position:relative}
+.contact-modal-content::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--ember))}
+.contact-eyebrow{font-size:.65rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.contact-modal h3{font-family:var(--font-display);font-size:1.8rem;font-weight:700;line-height:1.15;margin-bottom:.7rem;color:var(--text-primary)}
+.contact-modal>.contact-modal-content>p{font-size:.92rem;color:var(--text-secondary);line-height:1.7;font-weight:300;margin-bottom:1.5rem}
+.contact-form{display:flex;flex-direction:column;gap:1rem}
+.contact-form label{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);font-weight:600;margin-bottom:.3rem;display:block}
+.contact-form input,.contact-form textarea{width:100%;padding:.85rem 1rem;background:var(--ink);border:1px solid var(--border);color:var(--text-primary);font-family:var(--font-body);font-size:.92rem;border-radius:2px;transition:border-color .3s;resize:vertical}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--gold)}
+.contact-form textarea{min-height:120px;font-family:var(--font-body)}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:var(--text-muted)}
+.contact-modal-close{position:absolute;top:1rem;right:1rem;background:none;border:1px solid var(--border-hover);color:var(--text-primary);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1.1rem;transition:all .3s;display:flex;align-items:center;justify-content:center}
+.contact-modal-close:hover{border-color:var(--gold);color:var(--gold)}
+.contact-modal-actions{display:flex;gap:.7rem;margin-top:.5rem}
+.contact-modal-actions .btn{flex:1;padding:.85rem 1.4rem;font-size:.75rem}
+.contact-direct{font-size:.78rem;color:var(--text-muted);margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--border);text-align:center}
+.contact-direct a{color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+
+/* NEWSLETTER */
+.newsletter-section{background:var(--surface);border-top:1px solid var(--border);padding:5rem 3rem}
+.newsletter-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.newsletter-text h3{font-family:var(--font-display);font-size:1.8rem;font-weight:700;line-height:1.2;margin-bottom:.7rem;letter-spacing:-.01em}
+.newsletter-text p{font-size:.95rem;color:var(--text-secondary);line-height:1.6;font-weight:300}
+.newsletter-form{display:flex;gap:.5rem;flex-wrap:wrap}
+.newsletter-form input{flex:1;min-width:200px;padding:1rem 1.2rem;background:var(--ink);border:1px solid var(--border);color:var(--text-primary);font-family:var(--font-body);font-size:.9rem;border-radius:2px;transition:border-color .3s}
+.newsletter-form input:focus{outline:none;border-color:var(--gold)}
+.newsletter-form input::placeholder{color:var(--text-muted)}
+.newsletter-note{font-size:.72rem;color:var(--text-muted);margin-top:.8rem;line-height:1.5}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--border);padding:5rem 3rem 2rem;background:var(--ink)}
+.footer-inner{max-width:var(--max-width);margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;padding-bottom:2.5rem;border-bottom:1px solid var(--border)}
+.fb-name{font-family:var(--font-display);font-size:1.7rem;font-weight:700;margin-bottom:.5rem}
+.fb-name strong{color:var(--gold)}
+.fb-name span{font-weight:400;font-style:italic;color:var(--text-secondary)}
+.fb-desc{font-size:.88rem;color:var(--text-muted);line-height:1.7;margin-bottom:1.5rem;max-width:280px}
+.fb-meta{font-size:.75rem;color:var(--text-muted);line-height:1.7;margin-bottom:1.2rem}
+.fb-meta strong{color:var(--text-secondary)}
+.social-row{display:flex;gap:.6rem}
+.social-btn{width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.8rem;color:var(--text-muted);transition:all .3s;border-radius:2px;font-weight:700}
+.social-btn:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-dim)}
+.footer-col h5{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+.footer-col a{display:block;font-size:.85rem;color:var(--text-muted);margin-bottom:.55rem;transition:color .3s}
+.footer-col a:hover{color:var(--text-primary)}
+.footer-bottom{display:flex;justify-content:space-between;font-size:.72rem;color:var(--text-muted);flex-wrap:wrap;gap:.8rem;align-items:center}
+.footer-bottom-links{display:flex;gap:1.5rem}
+.footer-bottom-links a{transition:color .3s;cursor:pointer}
+.footer-bottom-links a:hover{color:var(--gold)}
+
+/* MOBILE */
+@media(max-width:960px){
+  .support-bar{padding:.55rem 1rem;font-size:.7rem;gap:.8rem}
+  .support-bar a span{display:none}
+  .nav{padding:.85rem 1.5rem;top:32px}
+  .nav-menu{display:none}
+  .nav-menu.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(11,10,15,.97);backdrop-filter:blur(20px);padding:1.5rem;gap:1rem;border-bottom:1px solid var(--border)}
+  .hamburger{display:block}
+  .section{padding:4rem 1.5rem}
+  .hero-content{grid-template-columns:1fr;gap:2rem;padding:7rem 1.5rem 4rem}
+  .hero-pill{order:2;padding-bottom:0}
+  .narrative-grid,.why-grid,.newsletter-inner,.story-grid{grid-template-columns:1fr;gap:2.5rem}
+  .story-grid{gap:3rem}
+  .why-big-num{font-size:5rem}
+  .programs-grid,.cta-grid{grid-template-columns:1fr !important}
+  .news-feed{grid-template-columns:1fr}
+  .news-feature{grid-row:auto}
+  .news-more{grid-template-columns:1fr 1fr}
+  .photo-band{height:50vh;min-height:380px}
+  .photo-band-content{padding:2rem 1.5rem}
+  .slider-caption{padding:1.2rem 1.5rem}
+  .slider-caption-title{font-size:1.1rem}
+  .slider-controls,.slider-dots{bottom:1rem}
+  .slider-dots{left:1rem}
+  .slider-controls{right:1rem}
+  .slider-btn{width:36px;height:36px;font-size:.9rem}
+  .slider-counter{top:1rem;right:1rem;font-size:.65rem;padding:.3rem .7rem}
+  .donate-actions{flex-direction:column;align-items:stretch}
+  .footer-top{grid-template-columns:1fr 1fr;gap:2rem}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:1rem}
+}
+@media(max-width:600px){
+  .footer-top{grid-template-columns:1fr}
+  .news-more{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<div class="support-bar" role="complementary" aria-label="Support announcement">
+  <strong>Mentorship changes lives.</strong>
+  <a href="#involved"><span>Become a mentor or sponsor today</span> &rarr;</a>
+</div>
+
+<nav class="nav" id="nav" aria-label="Main navigation">
+  <a href="#" class="nav-brand" aria-label="Well Suited home"><strong>Well</strong> <span>Suited</span></a>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="#mission">Our Story</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#press">Press</a></li>
+    <li><a href="#involved" class="nav-cta-btn">Get Involved</a></li>
+  </ul>
+  <button class="hamburger" id="ham" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+</nav>
+
+<main id="main">
+
+<!-- HERO — full bleed photo -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-photo">
+    <img src="images/07-networking-tables.png" alt="A wide view of mentors and youth seated at tables during the Embrace Race breakfast in Davenport">
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-eyebrow"><div class="dot" aria-hidden="true"></div><span>Quad Cities &middot; Davenport, Iowa</span></div>
+      <h1 id="hero-heading">
+        <span class="line">Every Young Person</span>
+        <span class="line">Deserves Someone</span>
+        <span class="line">In Their <span class="accent">Corner</span></span>
+      </h1>
+      <p class="hero-desc">Well Suited connects underserved youth with mentors, professionals, and community leaders across the Quad Cities &mdash; building confidence, exposure, and opportunity one relationship at a time.</p>
+      <div class="hero-actions">
+        <a href="#involved" class="btn btn-gold btn-arrow">Get Involved</a>
+        <a href="#mission" class="btn btn-ghost">Our Story</a>
+      </div>
+    </div>
+    <aside class="hero-pill" aria-label="Featured testimonial">
+      <div class="hero-pill-inner">
+        <div class="hero-pill-mark" aria-hidden="true">&ldquo;</div>
+        <p>This is right in line with our commitment to youth in this community. This is the work that matters.</p>
+        <cite>
+          <div class="pill-avatar" aria-hidden="true">KP</div>
+          <div>
+            <div class="pill-name">Kent Pilcher</div>
+            <div class="pill-role">CEO, Estes Construction</div>
+          </div>
+        </cite>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- MISSION — with photo -->
+<section class="section" id="mission" aria-labelledby="mission-heading">
+  <div class="container">
+    <div class="eyebrow r"><span>Our Story</span></div>
+    <h2 class="section-heading r r-delay-1" id="mission-heading">Founded on lived experience.<br>Fueled by community.</h2>
+    <div class="narrative-grid">
+      <div class="narrative-block r r-delay-2">
+        <div class="mission-photo-wrapper">
+          <div class="mission-photo">
+            <img src="images/01-tracy-keynote.png" alt="Tracy Singleton speaking at the Embrace Race event with the EMBRACE banner behind her">
+          </div>
+          <div class="mission-photo-caption">
+            <div class="pc-meta">Embrace Race &middot; Davenport</div>
+            <div class="pc-text">Tracy Singleton &mdash; Founder, in her own words</div>
+          </div>
+        </div>
+        <p>Tracy Singleton didn't build Well Suited in a boardroom. She built it from the memory of her own kitchen table &mdash; from the days when she was the mother, wondering how the gas bill would get paid or where the next meal would come from. Tracy knows what it's like to fight for stability, and that lived experience is the heartbeat of every choice she makes.</p>
+        <p>Today, as the founder of Well Suited and Executive Director of the TMBC Lincoln Center, Tracy has created a lifeline in Davenport. She's building an ecosystem that doesn't just see where underserved youth are, but illuminates exactly how far they can go.</p>
+        <p>We pair our young people with mentors and leaders from across the Quad Cities. We aren't here to lecture; we are here to walk beside them. Our mission is simple: to show every student what is possible when someone truly believes in their potential.</p>
+      </div>
+      <div class="r r-delay-3">
+        <div class="timeline-visual" aria-label="Organization timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-desc"><h4>Well Suited Founded</h4><p>First tuxedo event pairs mentors with youth in Davenport, sponsored by Estes Construction</p></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-desc"><h4>Lincoln Center Opens</h4><p>Community hub launches during the pandemic, expanding the mission</p></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2026</div>
+            <div class="timeline-desc"><h4>Embrace Race Experience</h4><p>Hosted at Modern Woodmen Park in Davenport &mdash; more events coming soon</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX PHOTO BAND — Tracy & Kent -->
+<section class="photo-band" aria-label="Featured moment">
+  <img src="images/04-kent-tracy.png" alt="Kent Pilcher and Tracy Singleton standing together at the Embrace Race event">
+  <div class="photo-band-overlay" aria-hidden="true"></div>
+  <div class="photo-band-content">
+    <div class="photo-band-inner r">
+      <div class="photo-band-eyebrow">A Partnership Built on Purpose</div>
+      <div class="photo-band-quote">"Whatever people felt they needed, they could get here. And we're slowly getting there."</div>
+      <div class="photo-band-attr"><strong>Tracy Singleton</strong> &middot; Founder, Well Suited</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY IT MATTERS -->
+<section class="why-matters section" aria-labelledby="why-heading">
+  <div class="why-bg" aria-hidden="true"></div>
+  <div class="why-inner">
+    <div class="eyebrow r"><span>Why It Matters</span></div>
+    <h2 class="section-heading r r-delay-1" id="why-heading">A single mentor relationship<br>can change a life.</h2>
+    <div class="why-grid">
+      <div class="why-stat-block r r-delay-2">
+        <div class="why-big-num">55%<small>more likely to enroll in college<br>than peers without mentors</small></div>
+        <div class="why-stat-source">Source: <a href="https://www.mentoring.org/resource/the-mentoring-effect/" target="_blank" rel="noopener noreferrer">MENTOR National &mdash; The Mentoring Effect Report</a></div>
+      </div>
+      <div class="why-text r r-delay-3">
+        <h3>The numbers behind mentorship are clear.</h3>
+        <p>Youth with consistent mentors are significantly more likely to graduate, attend college, hold leadership positions, and avoid risk behaviors. But statistics only tell part of the story.</p>
+        <p>What we see at every Well Suited event is something the data can't capture &mdash; the moment a young person stands a little taller because somebody showed up for them. The shift in their voice when they're asked about their dreams. The light that comes back on.</p>
+        <p>That's why this work matters. And that's why we need you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS — with photos and SVG icons -->
+<section class="section section-dark" id="programs" aria-labelledby="programs-heading">
+  <div class="container">
+    <div class="eyebrow r"><span>Programs</span></div>
+    <h2 class="section-heading r r-delay-1" id="programs-heading">Real experiences. Real relationships.<br>Real change.</h2>
+    <p class="section-sub r r-delay-2">Every program is designed around one idea: exposure changes everything. When a young person sees their future reflected in a mentor, the trajectory shifts.</p>
+    <div class="programs-grid">
+      <article class="program-card r r-delay-1">
+        <div class="program-card-photo"><img src="images/03-mentor-conversation.png" alt="A mentor in a suit speaking with three young men over breakfast"></div>
+        <div class="program-card-body">
+          <div class="program-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14l-3-2-3 2-3-2-3 2-3-2-3 2V6a2 2 0 0 1 2-2h2"/><path d="M9 7l3 4 3-4"/><path d="M12 11v9"/></svg>
+          </div>
+          <h3>The Tuxedo Experience</h3>
+          <p>Mentors and youth suit up together &mdash; learning how to tie a tie, carry themselves with confidence, and present their best selves. The day ends with a professional photo shoot and a dinner with speakers, because looking sharp and feeling valued go hand in hand.</p>
+          <span class="program-tag">Signature Event</span>
+        </div>
+      </article>
+      <article class="program-card r r-delay-2">
+        <div class="program-card-photo"><img src="images/02-banquet-hall.png" alt="Mentors and youth gathered at round tables during the Embrace Race breakfast"></div>
+        <div class="program-card-body">
+          <div class="program-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.1a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.85"/></svg>
+          </div>
+          <h3>Embrace Race Experience</h3>
+          <p>The flagship annual gathering brings 100+ young people together with CEOs, community leaders, and professionals for keynotes, "networking bingo," student panels, and real talk about overcoming obstacles and building a future worth pursuing.</p>
+          <span class="program-tag">Annual Gathering</span>
+        </div>
+      </article>
+      <article class="program-card r r-delay-3">
+        <div class="program-card-photo"><img src="images/05-students-listening.png" alt="A row of young men listening intently during a panel discussion"></div>
+        <div class="program-card-body">
+          <div class="program-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-7h4v7h4a1 1 0 0 0 1-1V10"/></svg>
+          </div>
+          <h3>Lincoln Center Hub</h3>
+          <p>A permanent home base at the TMBC Lincoln Center in Davenport where young people can show up, get resources, receive college guidance, or simply have a safe space with adults who are genuinely invested in their growth.</p>
+          <span class="program-tag">Year-Round Access</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- STORY MOMENT -->
+<section class="story-section" aria-labelledby="story-heading">
+  <div class="story-grid">
+    <div class="story-photo r">
+      <div class="story-photo-frame" aria-hidden="true"></div>
+      <div class="story-photo-img">
+        <img src="images/06-sponsor-recognition.png" alt="A speaker recognizing a young person at the front of the room during the sponsor segment">
+      </div>
+    </div>
+    <div class="story-content r r-delay-2">
+      <div class="eyebrow"><span>Voices</span></div>
+      <h2 class="section-heading" id="story-heading">When somebody shows up for you,<br>everything shifts.</h2>
+      <span class="story-quote-mark" aria-hidden="true">&ldquo;</span>
+      <div class="story-quote">Before this, I didn't really see myself doing anything big. I came to the breakfast and somebody talked to me like I was already going to be successful. Nobody had ever done that.</div>
+      <div class="story-attr">
+        <div class="story-attr-line" aria-hidden="true"></div>
+        <div class="story-attr-info">
+          <div class="name">Quad Cities Student</div>
+          <div class="role">Embrace Race Experience attendee</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS — with publication branding -->
+<section class="section section-dark" id="press" aria-labelledby="press-heading">
+  <div class="container">
+    <div class="eyebrow r"><span>In The Press</span></div>
+    <h2 class="section-heading r r-delay-1" id="press-heading">The community is<br>paying attention.</h2>
+    <div class="news-feed r r-delay-2">
+      <article class="news-feature">
+        <div class="news-feature-photo">
+          <img src="images/02-banquet-hall.png" alt="A wide view of the 2025 Embrace Race Luncheon">
+          <div class="news-feature-pub">
+            <span class="pub-mark qct">Quad-City Times</span>
+            <span class="pub-tag">Local News</span>
+          </div>
+          <div class="featured-pin">FEATURED</div>
+        </div>
+        <div class="news-feature-body">
+          <div class="nf-date">April 23, 2025</div>
+          <h3>Students Form Relationships, Envision Futures at Embrace Race Luncheon</h3>
+          <p>Over 100 local students attended the event at Augustana College, many dressed in their best suits. The luncheon featured keynote speaker Jahmal Cole, CEO of My Block My Hood My City, student panels from Augustana's Multicultural Men's Association, and "networking bingo" with local professionals.</p>
+          <p>Kent Pilcher, CEO of Estes Construction and co-sponsor of Well Suited, spoke at the event alongside Alvaro Macias, 2nd Ward Alderman for the City of Moline.</p>
+          <a href="https://qconline.com/news/local/education/article_4b9ca898-5fa0-48d5-a12f-b3664d680593.html" target="_blank" rel="noopener noreferrer" class="read-link">Read Full Article</a>
+        </div>
+      </article>
+      <article class="news-compact">
+        <div class="news-compact-pub">
+          <span class="nc-pub-name kwqc">KWQC TV6</span>
+          <span class="nc-date">Feb 17, 2025</span>
+        </div>
+        <div class="news-compact-body">
+          <h4>Unsung Heroes: Nonprofit Leader Brings Resources to QC</h4>
+          <p>KWQC profiled Tracy Singleton during Black History Month, spotlighting her triple role leading the Lincoln Center, Well Suited, and the QC Empowerment Network.</p>
+          <a href="https://www.kwqc.com/2025/02/17/unsung-heroes-nonprofit-leader-brings-resources-quad-citians-need/" target="_blank" rel="noopener noreferrer" class="read-link">Read Article</a>
+        </div>
+      </article>
+      <article class="news-compact">
+        <div class="news-compact-pub">
+          <span class="nc-pub-name our-qc">OurQuadCities &middot; WHBF</span>
+          <span class="nc-date">Feb 19, 2026</span>
+        </div>
+        <div class="news-compact-body">
+          <h4>Black History Month: Program is Well Suited for the QCA</h4>
+          <p>Our Quad Cities News spotlighted Well Suited as part of their annual honoring of organizations making a difference for young people in the community.</p>
+          <a href="https://www.ourquadcities.com/hidden-history/honoring-black-history/black-history-month-program-is-well-suited-for-the-qca/" target="_blank" rel="noopener noreferrer" class="read-link">Read Article</a>
+        </div>
+      </article>
+    </div>
+    <div class="news-more r r-delay-3">
+      <a href="https://www.wvik.org/news/2018-11-27/well-suited-hosts-professional-luncheon" target="_blank" rel="noopener noreferrer" class="news-mini">
+        <div class="nm-pub">
+          <span class="nm-pub-name wvik">WVIK &middot; Quad Cities NPR</span>
+          <span class="nm-date">Nov 2018</span>
+        </div>
+        <h5>Well Suited Hosts Professional Luncheon with Estes Construction</h5>
+        <div class="nm-date">Founding event coverage</div>
+      </a>
+      <a href="https://quadcitiesbusiness.com/quad-cities-nonprofits-receive-629000-in-foundation-grants/" target="_blank" rel="noopener noreferrer" class="news-mini">
+        <div class="nm-pub">
+          <span class="nm-pub-name qcbj">QC Business Journal</span>
+          <span class="nm-date">Oct 2025</span>
+        </div>
+        <h5>$20,000 QC Community Foundation Grant Awarded</h5>
+        <div class="nm-date">Operations &amp; Program Support</div>
+      </a>
+      <a href="https://quadcities.com/articles/ywca-quad-cities-hosts-annual-race-against-racism-on-may-22" target="_blank" rel="noopener noreferrer" class="news-mini">
+        <div class="nm-pub">
+          <span class="nm-pub-name qci">QuadCities.com</span>
+          <span class="nm-date">May 2021</span>
+        </div>
+        <h5>YWCA Honors Tracy Singleton at Race Against Racism</h5>
+        <div class="nm-date">Community recognition</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY SLIDESHOW -->
+<section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="eyebrow r"><span>Moments</span></div>
+    <h2 class="section-heading r r-delay-1" id="gallery-heading">From our community,<br>through the years.</h2>
+    <p class="section-sub r r-delay-2">Suit fittings, dinners, keynotes, and the quiet moments in between &mdash; the work happens in real rooms with real people.</p>
+    <div class="gallery-slider r r-delay-2" id="gallerySlider">
+      <div class="slider-track">
+        <div class="slider-slide active" data-index="0">
+          <img src="images/01-tracy-keynote.png" alt="Tracy Singleton speaking at the Embrace Race event">
+          <div class="slider-caption">
+            <div class="slider-caption-meta">Embrace Race &middot; Davenport, IA</div>
+            <div class="slider-caption-title">Tracy Singleton welcomes the room</div>
+          </div>
+        </div>
+        <div class="slider-slide" data-index="1">
+          <img src="images/02-banquet-hall.png" alt="Mentors and youth at round tables during breakfast">
+          <div class="slider-caption">
+            <div class="slider-caption-meta">Modern Woodmen Park</div>
+            <div class="slider-caption-title">Tables full of mentors and mentees</div>
+          </div>
+        </div>
+        <div class="slider-slide" data-index="2">
+          <img src="images/03-mentor-conversation.png" alt="A mentor in a suit talking with three young men">
+          <div class="slider-caption">
+            <div class="slider-caption-meta">Real Conversations</div>
+            <div class="slider-caption-title">Where the real work happens</div>
+          </div>
+        </div>
+        <div class="slider-slide" data-index="3">
+          <img src="images/04-kent-tracy.png" alt="Kent Pilcher and Tracy Singleton standing together">
+          <div class="slider-caption">
+            <div class="slider-caption-meta">Founders &amp; Sponsors</div>
+            <div class="slider-caption-title">Kent Pilcher &amp; Tracy Singleton</div>
+          </div>
+        </div>
+        <div class="slider-slide" data-index="4">
+          <img src="images/05-students-listening.png" alt="A row of young men listening attentively">
+          <div class="slider-caption">
+            <div class="slider-caption-meta">The Audience</div>
+            <div class="slider-caption-title">Listening, learning, becoming</div>
+          </div>
+        </div>
+        <div class="slider-slide" data-index="5">
+          <img src="images/06-sponsor-recognition.png" alt="A speaker recognizing a student during the Gold Sponsors segment">
+          <div class="slider-caption">
+            <div class="slider-caption-meta">Recognition Moment</div>
+            <div class="slider-caption-title">Honoring the next generation</div>
+          </div>
+        </div>
+        <div class="slider-slide" data-index="6">
+          <img src="images/07-networking-tables.png" alt="Wide view of the Embrace Race breakfast">
+          <div class="slider-caption">
+            <div class="slider-caption-meta">The Full Room</div>
+            <div class="slider-caption-title">100+ strong, every seat full</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-counter"><strong id="sliderCurrent">1</strong> / <span id="sliderTotal">7</span></div>
+      <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Photo slides"></div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="sliderPrev" aria-label="Previous photo">&larr;</button>
+        <button class="slider-btn" id="sliderNext" aria-label="Next photo">&rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section" aria-labelledby="partners-heading">
+  <div class="container" style="text-align:center">
+    <div class="eyebrow r" style="justify-content:center"><span>Community Partners</span></div>
+    <h2 class="section-heading r r-delay-1" id="partners-heading">Powered by the people<br>who show up.</h2>
+    <p class="section-sub r r-delay-2" style="margin:0 auto">The organizations and leaders making this work possible across the Quad Cities.</p>
+    <div class="partners-track r r-delay-3" role="list">
+      <div class="partner-badge" role="listitem">Estes Construction</div>
+      <div class="partner-badge" role="listitem">City of Davenport</div>
+      <div class="partner-badge" role="listitem">Eastern Iowa Community Colleges</div>
+      <div class="partner-badge" role="listitem">Ascentra Bank</div>
+      <div class="partner-badge" role="listitem">Per Mar</div>
+      <div class="partner-badge" role="listitem">Unity Point</div>
+      <div class="partner-badge" role="listitem">RepublicCo</div>
+      <div class="partner-badge" role="listitem">Tri-City Group</div>
+    </div>
+  </div>
+</section>
+
+<!-- GET INVOLVED — with custom SVG icons -->
+<section class="section section-dark" id="involved" aria-labelledby="involved-heading">
+  <div class="container">
+    <div class="eyebrow r"><span>Take Action</span></div>
+    <h2 class="section-heading r r-delay-1" id="involved-heading">This work doesn't happen<br>without people like you.</h2>
+    <p class="section-sub r r-delay-2">There are real, tangible ways you can show up for the young people of the Quad Cities &mdash; starting today.</p>
+    <div class="cta-grid">
+      <article class="cta-card r r-delay-1">
+        <div class="cta-icon-wrap mentor" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Become a Mentor</h3>
+        <p>Share your story, your time, and your experience with a young person who needs a positive presence in their life. No resume required &mdash; just show up and be real.</p>
+        <a href="https://forms.gle/mgbgFURHph4mKCrV7" target="_blank" rel="noopener noreferrer" class="cta-link">Apply to Mentor</a>
+      </article>
+      <article class="cta-card r r-delay-2">
+        <div class="cta-icon-wrap sponsor" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3>Sponsor an Event</h3>
+        <p>Help fund tuxedo rentals, venue costs, meals, photography, and the resources that make the Embrace Race Experience and Tuxedo Event possible year after year.</p>
+        <a href="https://forms.gle/ZS1WgPtcfTtjqvE39" target="_blank" rel="noopener noreferrer" class="cta-link">Become a Sponsor</a>
+      </article>
+      <article class="cta-card r r-delay-3">
+        <div class="cta-icon-wrap share" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        </div>
+        <h3>Spread the Word</h3>
+        <p>Follow us on Facebook, share our posts, and help us reach more families and young people across the Quad Cities who could benefit from this community.</p>
+        <a href="https://www.facebook.com/wellsuitedqc/" target="_blank" rel="noopener noreferrer" class="cta-link">Follow on Facebook</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section class="donate-banner" aria-labelledby="donate-heading">
+  <div class="donate-bg" aria-hidden="true"></div>
+  <div class="donate-grain" aria-hidden="true"></div>
+  <div class="donate-inner r">
+    <h2 id="donate-heading">Your support fuels <span class="em">every relationship</span> we build.</h2>
+    <p>Every dollar goes toward suits, mentors, meals, and moments that change the trajectory of a young person's life. Make a gift today and become part of someone's story.</p>
+    <div class="donate-actions">
+      <button class="btn btn-gold btn-coming-soon" disabled aria-disabled="true">
+        Make a Donation
+        <span class="coming-soon-tag">Coming Soon</span>
+      </button>
+      <a href="#involved" class="btn btn-ghost">Other Ways to Help</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section" aria-labelledby="newsletter-heading">
+  <div class="newsletter-inner">
+    <div class="newsletter-text">
+      <h3 id="newsletter-heading">Stay close to the work.</h3>
+      <p>Get updates on events, mentor opportunities, and the stories of the young people you're helping us reach.</p>
+    </div>
+    <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter signup">
+      <label for="newsletter-email" class="visually-hidden" style="position:absolute;left:-9999px">Email address</label>
+      <input id="newsletter-email" name="entry.1405037502" type="email" placeholder="your.email@example.com" required>
+      <button type="submit" class="btn btn-gold" id="newsletterBtn">Subscribe</button>
+      <div class="newsletter-note" style="flex-basis:100%">We respect your inbox. No spam, ever.</div>
+    </form>
+    <iframe name="hiddenNewsletterFrame" style="display:none" aria-hidden="true" title="Newsletter submission frame"></iframe>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="fb-name"><strong>Well</strong> <span>Suited</span></div>
+        <p class="fb-desc">Empowering underserved youth through mentorship, exposure, and opportunity in the Quad Cities since 2018.</p>
+        <div class="fb-meta">
+          <strong>TMBC Lincoln Center</strong><br>
+          318 E 7th St, Davenport, IA 52803
+        </div>
+        <div class="social-row">
+          <a href="https://www.facebook.com/wellsuitedqc/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Visit our Facebook page">f</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="#mission">Our Story</a>
+        <a href="#programs">Programs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#press">In the Press</a>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <a href="#involved">Get Involved</a>
+        <a href="https://forms.gle/mgbgFURHph4mKCrV7" target="_blank" rel="noopener noreferrer">Become a Mentor</a>
+        <a href="https://www.facebook.com/wellsuitedqc/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.thelincolncenterqc.org/" target="_blank" rel="noopener noreferrer">Lincoln Center QC</a>
+      </div>
+      <div class="footer-col">
+        <h5>Region</h5>
+        <a href="#">Davenport, IA</a>
+        <a href="#">Rock Island, IL</a>
+        <a href="#">Moline, IL</a>
+        <a href="#">Bettendorf, IA</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Well Suited QC. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Accessibility</a>
+        <a href="#" id="openContactModal">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- CONTACT MODAL -->
+<div class="contact-modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contact-heading" hidden>
+  <div class="contact-modal-content">
+    <button class="contact-modal-close" id="contactModalClose" aria-label="Close contact form">&times;</button>
+    <div class="contact-eyebrow">Get in Touch</div>
+    <h3 id="contact-heading">Send us a message.</h3>
+    <p>Have a question, want to volunteer, or just want to say hello? Send a note straight to Tracy &mdash; we read every one.</p>
+    <form class="contact-form" id="contactForm">
+      <div>
+        <label for="contact-name">Your Name</label>
+        <input id="contact-name" type="text" name="name" required placeholder="Jane Doe">
+      </div>
+      <div>
+        <label for="contact-email">Your Email</label>
+        <input id="contact-email" type="email" name="email" required placeholder="jane@example.com">
+      </div>
+      <div>
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" required placeholder="Tell us a little about why you're reaching out..."></textarea>
+      </div>
+      <div class="contact-modal-actions">
+        <button type="button" class="btn btn-ghost" id="contactCancel">Cancel</button>
+        <button type="submit" class="btn btn-gold">Send Message</button>
+      </div>
+    </form>
+    <div class="contact-direct">
+      Or email Tracy directly: <a href="mailto:tracy@thelincolncenterqc.org">tracy@thelincolncenterqc.org</a>
+    </div>
+  </div>
+</div>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('pinned',scrollY>60),{passive:true});
+
+const ham=document.getElementById('ham');
+const navMenu=document.getElementById('navMenu');
+ham.addEventListener('click',()=>{
+  const open=navMenu.classList.toggle('open');
+  ham.setAttribute('aria-expanded',open);
+});
+document.querySelectorAll('.nav-menu a').forEach(a=>a.addEventListener('click',()=>{
+  navMenu.classList.remove('open');
+  ham.setAttribute('aria-expanded','false');
+}));
+
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target)}});
+},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.r').forEach(el=>obs.observe(el));
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const href=this.getAttribute('href');
+    if(href==='#')return;
+    const t=document.querySelector(href);
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+  });
+});
+
+// Hero photo subtle parallax
+let ticking=false;
+window.addEventListener('scroll',()=>{
+  if(!ticking){
+    requestAnimationFrame(()=>{
+      const photo=document.querySelector('.hero-photo');
+      if(photo&&scrollY<window.innerHeight)photo.style.transform='translateY('+scrollY*.3+'px)';
+      ticking=false;
+    });
+    ticking=true;
+  }
+},{passive:true});
+
+// Slider
+const slides=document.querySelectorAll('.slider-slide');
+const totalSlides=slides.length;
+const dotsContainer=document.getElementById('sliderDots');
+const sliderCurrent=document.getElementById('sliderCurrent');
+const sliderTotal=document.getElementById('sliderTotal');
+let currentSlide=0;
+let slideInterval;
+
+if(slides.length>0){
+  sliderTotal.textContent=totalSlides;
+  for(let i=0;i<totalSlides;i++){
+    const dot=document.createElement('button');
+    dot.className='slider-dot'+(i===0?' active':'');
+    dot.setAttribute('role','tab');
+    dot.setAttribute('aria-label','Go to slide '+(i+1));
+    dot.addEventListener('click',()=>goToSlide(i));
+    dotsContainer.appendChild(dot);
+  }
+  
+  function goToSlide(n){
+    slides[currentSlide].classList.remove('active');
+    document.querySelectorAll('.slider-dot')[currentSlide].classList.remove('active');
+    currentSlide=(n+totalSlides)%totalSlides;
+    slides[currentSlide].classList.add('active');
+    document.querySelectorAll('.slider-dot')[currentSlide].classList.add('active');
+    sliderCurrent.textContent=currentSlide+1;
+    resetInterval();
+  }
+  
+  function resetInterval(){
+    clearInterval(slideInterval);
+    slideInterval=setInterval(()=>goToSlide(currentSlide+1),5500);
+  }
+  
+  document.getElementById('sliderPrev').addEventListener('click',()=>goToSlide(currentSlide-1));
+  document.getElementById('sliderNext').addEventListener('click',()=>goToSlide(currentSlide+1));
+  
+  const sliderEl=document.getElementById('gallerySlider');
+  sliderEl.addEventListener('mouseenter',()=>clearInterval(slideInterval));
+  sliderEl.addEventListener('mouseleave',resetInterval);
+  
+  resetInterval();
+}
+
+// Contact Modal
+const contactModal=document.getElementById('contactModal');
+const openBtn=document.getElementById('openContactModal');
+const closeBtn=document.getElementById('contactModalClose');
+const cancelBtn=document.getElementById('contactCancel');
+const contactForm=document.getElementById('contactForm');
+
+function openContact(e){
+  if(e)e.preventDefault();
+  contactModal.classList.add('active');
+  contactModal.removeAttribute('hidden');
+  document.body.style.overflow='hidden';
+  setTimeout(()=>document.getElementById('contact-name').focus(),100);
+}
+function closeContact(){
+  contactModal.classList.remove('active');
+  contactModal.setAttribute('hidden','');
+  document.body.style.overflow='';
+}
+
+if(openBtn)openBtn.addEventListener('click',openContact);
+if(closeBtn)closeBtn.addEventListener('click',closeContact);
+if(cancelBtn)cancelBtn.addEventListener('click',closeContact);
+contactModal.addEventListener('click',e=>{if(e.target===contactModal)closeContact()});
+
+contactForm.addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=document.getElementById('contact-name').value;
+  const email=document.getElementById('contact-email').value;
+  const message=document.getElementById('contact-message').value;
+  const subject=encodeURIComponent('Message from '+name+' via Well Suited Website');
+  const body=encodeURIComponent('From: '+name+' ('+email+')\n\n'+message);
+  window.location.href='mailto:tracy@thelincolncenterqc.org?subject='+subject+'&body='+body;
+  setTimeout(closeContact,500);
+});
+
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&contactModal.classList.contains('active'))closeContact();
+});
+
+// Newsletter -> Google Form (silent submit)
+const newsletterForm=document.getElementById('newsletterForm');
+const newsletterBtn=document.getElementById('newsletterBtn');
+const newsletterEmail=document.getElementById('newsletter-email');
+if(newsletterForm){
+  newsletterForm.addEventListener('submit',e=>{
+    e.preventDefault();
+    const email=newsletterEmail.value.trim();
+    if(!email)return;
+    newsletterBtn.disabled=true;
+    newsletterBtn.textContent='Sending...';
+    
+    const tempForm=document.createElement('form');
+    tempForm.action='https://docs.google.com/forms/d/e/1FAIpQLSczmFp62o9joe94NZyd5IPzjmm_foHB06MwokksxPo5j1jqoQ/formResponse';
+    tempForm.method='POST';
+    tempForm.target='hiddenNewsletterFrame';
+    tempForm.style.display='none';
+    const emailInput=document.createElement('input');
+    emailInput.name='entry.1405037502';
+    emailInput.value=email;
+    tempForm.appendChild(emailInput);
+    document.body.appendChild(tempForm);
+    tempForm.submit();
+    
+    setTimeout(()=>{
+      newsletterEmail.value='';
+      newsletterBtn.textContent='Thank you!';
+      newsletterBtn.style.background='var(--sage)';
+      newsletterBtn.style.color='var(--ivory)';
+      document.body.removeChild(tempForm);
+      setTimeout(()=>{
+        newsletterBtn.textContent='Subscribe';
+        newsletterBtn.disabled=false;
+        newsletterBtn.style.background='';
+        newsletterBtn.style.color='';
+      },3500);
+    },800);
+  });
+}
+</script>
+</body>
+</html>
